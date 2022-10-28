@@ -1,13 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+header {
+  padding-top: 64px;
+  position: relative;
+}
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 1152px;
+  height: 142px;
+}
+.profile-share-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 208px;
+  top: 20px;
+}
+
+.profile-img {
+  padding: 0px;
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
+  margin: auto;
+}
+.profile-name {
+  /* font-family: "Inter"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  text-align: center;
 }
