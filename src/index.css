@@ -1,54 +1,102 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-header {
-  padding-top: 64px;
-  position: relative;
-}
 .profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-  width: 1152px;
-  height: 142px;
+  width: 100%;
+  margin-top: 48px;
 }
+
 .profile-share-btn {
   position: absolute;
   width: 40px;
   height: 40px;
-  right: 208px;
-  top: 20px;
+  right: 360px;
+  top: 48px;
 }
-
-.profile-img {
+.profile-small-share-btn {
+  display: none;
+}
+#profile__img {
   padding: 0px;
   width: 88px;
   height: 88px;
   border-radius: 275px;
   margin: auto;
 }
-.profile-name {
-  /* font-family: "Inter"; */
+#profile-name {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
+.profile-link-btn {
+  background-color: #eaecf0;
+  width: 70%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 16px 8px;
+  font-size: 18px;
+}
+.social-links {
+  margin-bottom: 8rem;
+}
+
+.social-link-icon {
+  width: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
   text-align: center;
+  display: inline;
+}
+
+.profile-footer {
+  width: 70rem;
+  margin: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid #eee;
+}
+
+.profile-footer-logo {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-footer {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .profile-share-btn {
+    position: absolute;
+    right: 8px;
+  }
+  .profile-big-share-btn {
+    display: none;
+  }
+  .profile-small-share-btn {
+    display: block;
+  }
 }

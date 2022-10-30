@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "./Header";
+import Profileheader from "./Profileheader";
+import Profilelinks from "./Profilelinks";
+import Profilefooter from "./Profilefooter";
 
 export default function Profile() {
   return (
-    <>
-      <Header />
-    </>
+    <div className="profile-section">
+      <Profileheader />
+      <Profilelinks />
+      <Profilefooter />
+    </div>
   );
 }
