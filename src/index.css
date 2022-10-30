@@ -26,16 +26,74 @@ body {
   height: 40px;
   right: 300px;
   top: 48px;
+  /* width: 36px;
+  height: 48px; */
+  color: gray;
 }
+.profile-big-share-btn {
+  border: 2px dotted gray;
+  border-radius: 100%;
+}
+
 .profile-small-share-btn {
   display: none;
+  border: 2px dotted gray;
+  border-radius: 100%;
 }
-#profile__img {
-  padding: 0px;
+.profile-img-container {
+  position: relative;
   width: 88px;
   height: 88px;
-  border-radius: 275px;
   margin: auto;
+}
+#profile__img {
+  /* background-color: black; */
+
+  /* opacity: 0.5; */
+  /* display: block; */
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 275px;
+  /* margin: auto; */
+  cursor: pointer;
+}
+
+.profile-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 275px;
+
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: black;
+}
+.profile-img-container:hover .profile-img-overlay {
+  opacity: 0.5;
+}
+
+.profile-img-overlay:hover {
+  /* background-color: blue; */
+  /* opacity: 1; */
+}
+.camera-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  opacity: 0;
+  /* z-index: 99; */
+}
+.camera-icon:hover {
+  opacity: 1;
 }
 #profile-name {
   font-style: normal;
@@ -50,10 +108,14 @@ body {
   background-color: #eaecf0;
   width: 70%;
   border: none;
+  cursor: pointer;
   border-radius: 8px;
   margin-bottom: 1rem;
   padding: 16px 8px;
   font-size: 18px;
+}
+.profile-link-btn:hover {
+  background-color: #d0d5dd;
 }
 .social-links {
   margin-bottom: 8rem;
