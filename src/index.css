@@ -24,7 +24,7 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  right: 360px;
+  right: 300px;
   top: 48px;
 }
 .profile-small-share-btn {
@@ -68,7 +68,7 @@ body {
 }
 
 .profile-footer {
-  width: 70rem;
+  width: 90%;
   margin: auto;
   padding: 24px;
   display: flex;
@@ -83,6 +83,12 @@ body {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 950px) {
+  .profile-share-btn {
+    position: absolute;
+    right: 140px;
+  }
+}
 @media screen and (max-width: 600px) {
   .profile-footer {
     display: block;
