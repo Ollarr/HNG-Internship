@@ -5,9 +5,14 @@ import GithubIcon from "../assets/Github icon.png";
 export default function Profilelinks() {
   return (
     <div className="profile-links">
-      <a href=" ">
+      <a href="https://twitter.com/DevOlarr">
         <button id="twitter" className="profile-link-btn">
           Twitter Link
+        </button>
+      </a>
+      <a href="">
+        <button id="slack" className="profile-link-btn">
+          Slack Link
         </button>
       </a>
       <a href="https://training.zuri.team/">

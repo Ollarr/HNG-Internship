@@ -1,7 +1,7 @@
 import React from "react";
-import { BsThreeDots } from "react-icons/bs";
-import { RiShareForwardLine } from "react-icons/ri";
 import { AiOutlineCamera } from "react-icons/ai";
+import avatarShareIcon from "../assets/_Avatar share button.png";
+import avatarSharIconMobile from "../assets/_Avatar share button-mobile.png";
 
 import profileImg from "../assets/Profile-pic.jpg.jpeg";
 
@@ -10,10 +10,10 @@ export default function Profileheader() {
     <div className="profile-container">
       <div className="profile-share-btn">
         <div className="profile-big-share-btn">
-          <RiShareForwardLine />
+          <img src={avatarShareIcon} alt="" />{" "}
         </div>
         <div className="profile-small-share-btn">
-          <BsThreeDots />
+          <img src={avatarSharIconMobile} alt="" />{" "}
         </div>
       </div>
       <div className="profile-img-container">
