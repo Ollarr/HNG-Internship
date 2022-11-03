@@ -1,6 +1,7 @@
 import React from "react";
 import SlackIcon from "../assets/slack.png";
 import GithubIcon from "../assets/Github icon.png";
+import { Link } from "react-router-dom";
 
 export default function Profilelinks() {
   return (
@@ -10,7 +11,7 @@ export default function Profilelinks() {
           Twitter Link
         </button>
       </a>
-      <a href="">
+      <a href=" ">
         <button id="slack" className="profile-link-btn">
           Slack Link
         </button>
@@ -40,6 +41,11 @@ export default function Profilelinks() {
           Design Books
         </button>
       </a>
+      <Link to="/contact">
+        <button id="contact" className="profile-link-btn">
+          Contact Me
+        </button>
+      </Link>
       <div className="social-links">
         <a href=" ">
           <img className="social-link-icon" src={SlackIcon} alt="" />

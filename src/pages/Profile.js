@@ -1,7 +1,7 @@
 import React from "react";
-import Profileheader from "./Profileheader";
-import Profilelinks from "./Profilelinks";
-import Profilefooter from "./Profilefooter";
+import Profileheader from "../components/Profileheader";
+import Profilelinks from "../components/Profilelinks";
+import Profilefooter from "../components/Profilefooter";
 
 export default function Profile() {
   return (
