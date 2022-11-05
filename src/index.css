@@ -130,55 +130,10 @@ body {
 .profile-footer-logo {
   margin-bottom: 16px;
 }
-.contact-page {
-  /* text-align: center; */
-}
-.contact-title {
-  /* width: 640px;
-  display: block;
-  margin: auto;
-  text-align: left; */
-}
-.contact-form {
-}
-.contact-name {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.contact-name-left {
-  width: 50%;
-}
-.contact-name-right {
-  width: 50%;
-}
-.contact-form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  /* text-align: left; */
-  width: 100%;
-}
-/* .contact-form-group h3 {
-  text-align: left;
-} */
-.contact-form-group-email {
-  /* text-align: left; */
-  width: 100%;
-  margin-left: auto;
-}
-.contact-form-group-message {
-  /* text-align: left; */
-  width: 100%;
-  margin-left: auto;
-}
 
 /* contact-form */
 form {
-  /* background: rgba(27, 31, 34, 0.8); */
-  width: 640px;
+  width: 800px;
   margin: 50px auto;
   max-width: 97%;
   border-radius: 4px;
@@ -192,7 +147,7 @@ form .contact-title {
   text-align: left;
 }
 form .contact-title h4 {
-  font-weight: 200;
+  font-weight: 400;
 }
 form .half {
   display: flex;
@@ -226,7 +181,19 @@ form .half .item input {
   background: transparent;
   font-size: 17px;
 }
-
+form .half .item input:focus {
+  border: 1px solid #84caff;
+}
+form .full input {
+  margin-top: 12px;
+}
+form .full textarea {
+  font-family: "inter";
+  margin-top: 12px;
+}
+form .full textarea:focus {
+  border: 1px solid red;
+}
 form .full input {
   border-radius: 4px;
   border: 1px solid #d0d5dd;
@@ -236,6 +203,10 @@ form .full input {
   height: 44px;
   background: transparent;
   font-size: 17px;
+}
+
+form .full input:focus {
+  border: 1px solid #84caff;
 }
 
 form .full {
@@ -253,7 +224,9 @@ form .full textarea {
   font-size: 16px;
   resize: none;
 }
-
+form .full .text-area-msg {
+  color: red;
+}
 form .action {
   margin-bottom: 32px;
 }
@@ -276,6 +249,10 @@ form .action input[type="submit"] {
   color: #ffffff;
   width: 100%;
 }
+form .action input[type="submit"]:hover {
+  background: #175cd3;
+}
+
 form .action input[type="checkbox"] value {
   color: #000;
 }
